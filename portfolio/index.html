@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prema's Stylish Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="slider">
+    <!-- HOME SLIDE -->
+    <section class="slide" id="home">
+      <section class="content">
+       <div><img src="prema.jpg" alt="Prema" class="profile-img"> </div>
+        <div class="intro">
+          <h1 id="typed-text"></h1>
+          <p>Web Developer | UI/UX Designer | Tech Enthusiast</p>
+          <button onclick="nextSlide()">About Me </button>
+        </div>
+        </section>
+    </section>
+
+    <!-- ABOUT ME SLIDE -->
+    <section class="slide" id="about">
+  <h2>About Me</h2>
+  <div class="card">
+  <p>I’m a passionate developer who loves crafting beautiful and interactive websites using HTML, CSS, and JavaScript. I enjoy animation, clean UI, and challenging myself with new designs.✨</p><p>"I’m on a mission to level up my Python skills and turn ideas into impactful code."
+ </p></div>
+  <div><button onclick="start()">Back</i> </button>
+  <button onclick="nextSlide()">Skills</button></div>
+  </section>
+<section class="slide" id="skills">
+  <h2>My Skills</h2>
+  <div class="projects">
+    <div class="card">💻 HTML<br/><span>Advanced</span></div>
+    <div class="card">🎨 CSS<br/><span>Advanced</span></div>
+    <div class="card">⚙️ JavaScript<br/><span>Intermediate</span></div>
+    <div class="card">📈 Python Programming</br><span>Intermediate</span></div>
+    <div class="card">🧠 Problem Solving<br/><span>Good understanding</span></div>
+    <div class="card">🎯 UI/UX Design<br/><span>Creative & Modern</span></div>
+  </div>
+    <div> <button onclick="start()">Back </button>
+  <button onclick="nextSlide()">Education</button></div>
+</section>
+<section class="slide" id="education" >
+  <h2 class="section-title">Education 🎓</h2>
+  <div class="edu-box">
+    <h3>B.E  Computer Science</h3>
+    <p>JAYA ENGINEEING COLLEGE </p>
+    <p>(2023-2027)</p>
+    <div> <button onclick="start()">Back </button>
+  <button onclick="nextSlide()">Project</button></div>
+  </div>
+</section>
+    <!-- PROJECTS SLIDE -->
+    <section class="slide" id="projects">
+      <h2>My Projects</h2>
+      <div class="projects">
+        <div class="card">🧮 Calculator<br/><span>Simple calculator with CSS/JS</span></div>
+        <div class="card">✊✋✌ RPS Game<br/><span>Play against AI</span></div>
+        <div class="card">🛒 E-commerce<br/><span>Stylish shopping layout</span></div>
+        <div class="card">🌦️ Weather App<br/><span>Live weather via API</span></div>
+        <div class="card">🎮 Tic Tac Toe<br/><span>Classic fun game</span></div>
+        <div class="card">⏰Stop Watch<br/><span>Timer</span></div>
+        <div class="card">📝To Do List<br/><span>List of Tasks</span></div>
+      </div>
+       <div> <button onclick="start()">Back</button>
+      <button onclick="nextSlide()">Contact </i></button></div>
+    </section>
+    <section class="slide contact-slide" id="contact">
+  <h2 class="contact-title">GET IN TOUCH</h2>
+
+  <div class="email-box">
+    <span id="email-text">vprema376@gmail.com</span>
+    <button onclick="copyEmail()">📋</button>
+  </div>
+<div class="socials">
+       
+        <a href="https://www.linkedin.com/in/premavathy-vijayan-921a39252?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/PremavathyV"><i class="fa-brands fa-github"></i>
+</a>
+</div>
+ <div><button onclick="exitpage()">Thanks for visiting🤝🏻</button>
+      <button onclick="prevSlide()">Back to Start</button></div>
+</section>
+
+  <script src="script.js"></script>
+</body>
+</html>
